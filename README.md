@@ -13,8 +13,6 @@ The rules are simple: **Anyone can put money in, but only I (the owner) can take
 ## How the "Security Guard" Works
 
 The main logic relies on two simple concepts: remembering who created the contract and checking ID at the door.
-
-### 1. Setting the Boss (The Owner)
 When I first put this contract on the blockchain (deploy it), a special function called `constructor()` runs automatically. It does one important thing:
 owner = msg.sender;
 msg.sender is just code for "the person currently interacting."
